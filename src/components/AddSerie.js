@@ -30,6 +30,6 @@ export const AddSerie = ({ handleAdd }) => {
     )
 }
 
-AddSerie.prototype = {
+AddSerie.propTypes = {
     handleAdd: PropTypes.func.isRequired
 }

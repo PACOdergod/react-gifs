@@ -17,7 +17,7 @@ export const useFetchGifts = ( categoria )=>{
                     data: imgs,
                     loading: false
                 }) 
-            },2000);
+            },0);
         })
 
     }, [ categoria ])

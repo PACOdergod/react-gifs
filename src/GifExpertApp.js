@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { AddSerie } from './components/AddSerie'
 import GifGrid from './components/GifGrid'
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ categoria=['perros'] }) => {
 
-    const [series, setSeries] = useState(['amor'])
+    const [series, setSeries] = useState( categoria )
 
     const handleAdd = ( serie )=>setSeries( state => [serie, ...state] )
 
